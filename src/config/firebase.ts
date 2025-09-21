@@ -3,15 +3,15 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 // Your Firebase configuration
-// Replace these values with your actual Firebase config from Firebase Console
+// These values are loaded from environment variables for security
 const firebaseConfig = {
-  apiKey: "AIzaSyAp7qUdeOeTYeGq9dh5jLYz9n4yL6iC4Gc",
-  authDomain: "credentials-manager-c45ea.firebaseapp.com",
-  projectId: "credentials-manager-c45ea",
-  storageBucket: "credentials-manager-c45ea.firebasestorage.app",
-  messagingSenderId: "399815943434",
-  appId: "1:399815943434:web:4ed2164c280da1ead9c6f3",
-  measurementId: "G-DDKJ0Q7GVV"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

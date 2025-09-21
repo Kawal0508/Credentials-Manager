@@ -59,12 +59,25 @@ A secure, modern password management application built with React and TypeScript
    npm install
    ```
 
-3. **Start the development server**
+3. **Set up environment variables**
+   Create a `.env` file in the root directory with your Firebase configuration:
+   ```bash
+   # Firebase Configuration
+   REACT_APP_FIREBASE_API_KEY=your_api_key_here
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_app_id
+   REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id
+   ```
+
+4. **Start the development server**
    ```bash
    npm start
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to `http://localhost:3000` to view the application.
 
 ## Usage
