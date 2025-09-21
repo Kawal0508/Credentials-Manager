@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3e454b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #7e94ab;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #7e94ab;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-5 {
+        fill: #08205e;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="325.42" y1="320.17" x2="771.6" y2="713.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2d033"/>
+      <stop offset=".2" stop-color="#ebc72d"/>
+      <stop offset=".52" stop-color="#d9b01e"/>
+      <stop offset=".91" stop-color="#bd8b05"/>
+      <stop offset="1" stop-color="#b68200"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-2" x="0" y="0" width="1080" height="1080" rx="134.19" ry="134.19"/>
+  <g>
+    <g>
+      <path class="cls-1" d="M540,217.58v758.92l-62.58-33.77c-166.69-90.54-270.48-265.03-270.48-454.74l.42-206.34s141.92-61.36,332.64-64.08Z"/>
+      <path class="cls-5" d="M873.06,281.66v206.34c0,189.71-103.79,364.2-270.48,454.74l-62.58,33.77V217.58c101.83-1.44,217.58,13.83,333.06,64.08Z"/>
+      <path class="cls-6" d="M580.1,515.52h30.39v-51.48c49.63-25.48,83.58-77.17,83.58-136.79,0-84.87-68.79-153.66-153.66-153.66s-153.66,68.79-153.66,153.66c0,58.96,33.21,110.16,81.94,135.93h-.05v52.34h32.08v328.42c0,21.92,17.76,39.68,39.68,39.68s39.68-17.76,39.68-39.68v-22.8h70.92v-59.1h-55.72v-50.66h55.72v-59.1h-70.92v-136.77ZM456,327.25c0-46.62,37.81-84.43,84.43-84.43s84.43,37.81,84.43,84.43-37.81,84.43-84.43,84.43-84.43-37.81-84.43-84.43Z"/>
+    </g>
+    <g>
+      <circle class="cls-4" cx="538.31" cy="540" r="484.61"/>
+      <circle class="cls-3" cx="540" cy="55.39" r="30.39"/>
+      <circle class="cls-3" cx="540" cy="1024.61" r="30.39"/>
+      <circle class="cls-3" cx="55.39" cy="540" r="30.39"/>
+      <circle class="cls-3" cx="1024.61" cy="540" r="30.39"/>
+    </g>
+  </g>
+</svg>

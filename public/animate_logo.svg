@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 1500">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill:rgb(255, 255, 255);
+      }
+
+      .st1 {
+        fill:rgb(171, 209, 249);
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #7e94ab;
+        stroke-linejoin: round;
+        stroke-width: 20px;
+      }
+
+      .st3 {
+        fill: #08205e;
+      }
+
+      .st4 {
+        fill: url(#linear-gradient);
+      }
+
+      .outer_logo_circle {
+        animation: rotate 10s linear infinite;
+        transform-origin: 750px 750px;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="300.4" y1="342.7" x2="746.6" y2="735.9" gradientTransform="translate(0 -47.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEB3B"/>
+      <stop offset=".25" stop-color="#FFD700"/>
+      <stop offset=".5" stop-color="#FFC107"/>
+      <stop offset=".75" stop-color="#FFB300"/>
+      <stop offset="1" stop-color="#F9A825"/>
+    </linearGradient>
+  </defs>
+  <g id="shield">
+    <path id="left_shield" class="st0" d="M750,427.6v758.9l-62.6-33.8c-166.7-90.5-270.5-265-270.5-454.7l.4-206.3s141.9-61.4,332.6-64.1h0Z"/>
+    <path id="right_shield" class="st3" d="M1083.1,491.7v206.3c0,189.7-103.8,364.2-270.5,454.7l-62.6,33.8V427.6c101.8-1.4,217.6,13.8,333.1,64.1h0Z"/>
+  </g>
+  <path id="Key" class="st4" d="M790.1,725.5h30.4v-51.5c49.6-25.5,83.6-77.2,83.6-136.8,0-84.9-68.8-153.7-153.7-153.7s-153.7,68.8-153.7,153.7,33.2,110.2,81.9,135.9h0v52.3h32.1v328.4c0,21.9,17.8,39.7,39.7,39.7s39.7-17.8,39.7-39.7v-22.8h70.9v-59.1h-55.7v-50.7h55.7v-59.1h-70.9v-136.8h0,0ZM666,537.2c0-46.6,37.8-84.4,84.4-84.4s84.4,37.8,84.4,84.4-37.8,84.4-84.4,84.4-84.4-37.8-84.4-84.4Z"/>
+  <g class="outer_logo_circle">
+    <circle id="circle_ring" class="st2" cx="750" cy="750" r="600"/>
+    <circle id="left_circle" class="st1" cx="150" cy="750" r="50"/>
+    <circle id="bottom_circle" class="st1" cx="750" cy="1350" r="50"/>
+    <circle id="right_circle" class="st1" cx="1350" cy="750" r="50"/>
+    <circle id="top_circle" class="st1" cx="750" cy="150" r="50"/>
+  </g>
+</svg>

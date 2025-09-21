@@ -1,0 +1,530 @@
+/* Custom styles for Credentials Manager */
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.font-monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.search-credentials .form-control {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.search-credentials .btn {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+/* Custom card hover effects */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Password strength indicator */
+.password-strength-indicator {
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Custom button styles */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .btn {
+    font-size: 0.875rem;
+  }
+}
+
+/* Animation for alerts */
+.alert {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom focus styles */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Password visibility toggle */
+.password-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.password-toggle:hover {
+  opacity: 0.7;
+}
+
+/* Home page styles */
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.darkveil-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 1;
+  background: rgba(13, 110, 253, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+  border-color: rgba(13, 110, 253, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Quick actions button styles */
+.btn-quick-action {
+  min-width: 200px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-quick-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats section */
+.stats-section {
+  background: rgba(248, 249, 250, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Content sections with glass effect */
+.home-page .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .bg-light {
+  background: rgba(248, 249, 250, 0.1) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Home page text colors */
+.home-page .text-dark {
+  color: #ffffff !important;
+}
+
+.home-page .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.home-page .fw-bold {
+  color: #ffffff !important;
+}
+
+.home-page .fw-semibold {
+  color: #ffffff !important;
+}
+
+.home-page .lead {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.home-page .display-4 {
+  color: #ffffff !important;
+}
+
+.home-page .display-5 {
+  color: #ffffff !important;
+}
+
+.home-page h1, .home-page h2, .home-page h3, .home-page h4, .home-page h5, .home-page h6 {
+  color: #ffffff !important;
+}
+
+.home-page p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.home-page .small {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Feature card text */
+.home-page .feature-card h4 {
+  color: #ffffff !important;
+}
+
+.home-page .feature-card p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Stats section text */
+.home-page .stats-section h3 {
+  color: #ffffff !important;
+}
+
+.home-page .stats-section p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.home-page .stats-section h5 {
+  color: #ffffff !important;
+}
+
+.home-page .stats-section .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Auth pages with DarkVeil background */
+.auth-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.auth-page .darkveil-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Auth page text colors */
+.auth-page .text-dark {
+  color: #ffffff !important;
+}
+
+.auth-page .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.auth-page .fw-semibold {
+  color: #ffffff !important;
+}
+
+.auth-page .form-label {
+  color: #ffffff !important;
+}
+
+.auth-page .form-control {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.auth-page .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.auth-page .form-control:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: #0d6efd !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.auth-page .position-absolute.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Dashboard page with DarkVeil background */
+.dashboard-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-page .darkveil-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+.dashboard-page .darkveil-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+  z-index: 1;
+}
+
+.dashboard-navbar {
+  background: rgba(13, 110, 253, 0.1) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dashboard text colors */
+.dashboard-page .text-dark {
+  color: #ffffff !important;
+}
+
+.dashboard-page .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dashboard-page .fw-semibold {
+  color: #ffffff !important;
+}
+
+.dashboard-page .form-label {
+  color: #ffffff !important;
+}
+
+.dashboard-page .form-control {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.dashboard-page .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dashboard-page .form-control:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: #0d6efd !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.dashboard-page .position-absolute.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Nav links in dashboard */
+.dashboard-page .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease;
+}
+
+.dashboard-page .nav-link:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dashboard-page .nav-link.active {
+  color: #ffffff !important;
+  background: rgba(13, 110, 253, 0.3) !important;
+}
+
+/* Card titles and text in dashboard */
+.dashboard-page .card-title {
+  color: #ffffff !important;
+}
+
+.dashboard-page .card-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dashboard-page .small {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dashboard-page .small.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Responsive home page */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+  
+  .btn-quick-action {
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Improved contrast for all text elements */
+.card-spotlight .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.card-spotlight .form-label {
+  color: white !important;
+  font-weight: 600;
+}
+
+.card-spotlight .form-check-label {
+  color: white !important;
+}
+
+.card-spotlight .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.card-spotlight .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.card-spotlight .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-spotlight code {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-spotlight .btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.card-spotlight .btn-outline-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+/* Header layout improvements */
+.dashboard-header {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .dashboard-header .pill-nav-container {
+    order: 1;
+  }
+  
+  .dashboard-header .user-controls {
+    order: 2;
+  }
+}
