@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Login from './components/Login';
 import Register from './components/Register';
@@ -9,6 +9,31 @@ import './App.css';
 const AppContent: React.FC = () => {
   const { isAuthenticated, loading } = useAuth();
   const [isLoginMode, setIsLoginMode] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Check if Firebase config is available
+    if (!process.env.REACT_APP_FIREBASE_API_KEY) {
+      console.warn('Firebase API key not found in environment variables. Using fallback values.');
+    }
+  }, []);
+
+  if (error) {
+    return (
+      <div className="d-flex justify-content-center align-items-center min-vh-100">
+        <div className="text-center">
+          <h2 className="text-danger">Application Error</h2>
+          <p>{error}</p>
+          <button 
+            className="btn btn-primary" 
+            onClick={() => window.location.reload()}
+          >
+            Reload Page
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (loading) {
     return (
